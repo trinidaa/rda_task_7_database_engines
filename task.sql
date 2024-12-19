@@ -31,7 +31,9 @@ CREATE TABLE Logs (
 ) ENGINE=Blackhole;
 
 CREATE TABLE ProductReporting (
+    ID INT AUTO_INCREMENT,
     Date DATE NOT NULL,
     ProductName VARCHAR(100) NOT NULL,
-    Orders INT NOT NULL
+    Orders INT NOT NULL,
+    PRIMARY KEY (ID)
 ) ENGINE=CSV;
